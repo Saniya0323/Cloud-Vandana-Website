@@ -1,0 +1,12 @@
+This is a website which is build upon HTML, CSS, JS.
+It includes 3 pages Profile-Card, To-Do list and Image slider.
+
+Profile-Card being the first page.
+I have added navigation bar for smooth transitions from 1 webpage to other.
+
+I have pushed this code on GitHub repo named Cloud Vandana Website but aprat from that used 
+GitHub pages for publishing the site.
+
+Link for GitHub Pages -  https://saniya0323.github.io/Cloud-Vandana-Website/
+
+-- Saniya ✨

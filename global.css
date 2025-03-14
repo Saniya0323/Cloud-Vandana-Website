@@ -1,0 +1,190 @@
+/* ✨ Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74cfeb, #acb6e5);
+}
+
+/* ✨ Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ✨ Profile Card */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+.profile-pic {
+    width: 100px;
+    border-radius: 50%;
+}
+
+h2 {
+    margin: 10px;
+    font-family:cursive;
+}
+
+.designation {
+    color: #555;
+    font-weight: bold;
+}
+
+.bio {
+    font-size: 14px;
+    color: #777;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 5px;
+}
+
+/* ✨ To-Do List */ 
+
+.todo-container {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.todo-container:hover {
+    transform: scale(1.05);
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    /* margin: 10px 0; */
+}
+
+button {
+    padding: 10px;
+    margin: 3px;
+    background: #385be8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #58aa21;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 3px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li button {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* ✨ Image Slider */
+
+.slider-container {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#slider {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+} */
+
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
